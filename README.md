@@ -12,7 +12,7 @@ financial info swiftly.
 
 Project ni tak pakai any database to store any information. User's
 private data are being stored in user's phone. To prevent unwanted data exploits, password
-is encrypted before storing and in user's phone.
+is encrypted before storing in user's phone.
 
 
 #
