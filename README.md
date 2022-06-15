@@ -24,7 +24,7 @@ variables to your folder's .env file
 `mobile/.env` :
 
 `BASE_SERVER_URL` - since its a dev project, and using Android Studio's Virtual Android,
-connect to local by using http://10.0.2.2:PORT
+connect to local server by using http://10.0.2.2:PORT
 
 `ENCRYPT_KEY` - to encrypt and decrypt user's password by using AES algo
 
