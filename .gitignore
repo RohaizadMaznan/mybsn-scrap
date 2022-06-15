@@ -1,0 +1,4 @@
+.vscode
+mobile/.env
+mobile/.env.development
+server/node_modules
