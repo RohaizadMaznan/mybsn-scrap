@@ -3,7 +3,7 @@ const { urlencoded } = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const { checkUserIsAuthorize } = require('./middleware');
-const PORT = 5000;
+const PORT = process.env.PORT || 3001;
 
 const app = express()
 
@@ -28,6 +28,12 @@ app.use(cors({
 app.use(express.json())
 app.use(cookieParser())
 
+app.set('view engine', 'ejs')
+app.engine('ejs', require('ejs').__express);
+app.get('/', (req, res)=>{
+    res.render('home')
+    // res.send('Welcome to unofficial myBSN API. Head over to https://github.com/irfan-zahir/mybsn-scrap to contribute!')
+})
 app.use('/login', require('./login'))
 app.use('/authorized', checkUserIsAuthorize, require('./authorized'))
 
