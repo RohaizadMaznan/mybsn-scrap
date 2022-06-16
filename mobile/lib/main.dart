@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:mobile/classes/login_state.dart';
 import 'package:mobile/pages/authorized/index.dart';
@@ -99,7 +101,7 @@ class _MyBSNState extends State<MyBSN> with WidgetsBindingObserver {
     if (state == AppLifecycleState.inactive ||
         state == AppLifecycleState.detached) return;
 
-    if (state == AppLifecycleState.paused) print('pausef');
+    if (state == AppLifecycleState.paused) log('pausef');
 
     if (state == AppLifecycleState.resumed) {
       checkUserAuthorized();
@@ -114,7 +116,7 @@ class _MyBSNState extends State<MyBSN> with WidgetsBindingObserver {
           value: isAuthorized,
           child: Consumer<LoginState>(
             builder: (context, loginState, child) {
-              if (loginState.authorized.isNotEmpty && loginState.authorized != 'unauthorized') return LandingPage();
+              if (loginState.authorized.isNotEmpty && loginState.authorized != 'unauthorized') return const LandingPage();
               return LoginScreen();
             },
           ),

@@ -26,11 +26,11 @@ class StepOne extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 child: TextFormField(
                     controller: usernameController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       hintText: "Enter your username...",
                       contentPadding:
-                          const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-                      border: const OutlineInputBorder(
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                      border: OutlineInputBorder(
                           borderSide: BorderSide.none,
                           borderRadius: BorderRadius.all(Radius.circular(16.0))),
                     )),

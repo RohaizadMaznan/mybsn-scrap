@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:mobile/pages/authorization/StepOne.dart';
 import 'package:mobile/pages/authorization/StepThree.dart';

@@ -42,7 +42,7 @@ class StepTwo extends StatelessWidget {
         const SizedBox(
           height: 24,
         ),
-        Text('Is this your security image?'),
+        const Text('Is this your security image?'),
         const SizedBox(
           height: 24,
         ),

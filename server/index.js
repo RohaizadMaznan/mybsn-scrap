@@ -1,7 +1,6 @@
 const express = require('express')
 const { urlencoded } = require('body-parser');
 const cors = require('cors');
-const cookieParser = require('cookie-parser');
 const { checkUserIsAuthorize } = require('./middleware');
 const PORT = process.env.PORT || 3001;
 
@@ -26,7 +25,6 @@ app.use(cors({
     methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'HEAD'] 
 }))
 app.use(express.json())
-app.use(cookieParser())
 
 app.set('view engine', 'ejs')
 app.engine('ejs', require('ejs').__express);

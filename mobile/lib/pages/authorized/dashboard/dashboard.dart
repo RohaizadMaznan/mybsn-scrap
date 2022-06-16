@@ -74,7 +74,7 @@ class _DashboardState extends State<Dashboard> {
               );
             });
           }
-          return Center(child: DottedCircularProgressIndicatorFb(numDots: 10));
+          return const Center(child: DottedCircularProgressIndicatorFb(numDots: 10));
         });
   }
 }

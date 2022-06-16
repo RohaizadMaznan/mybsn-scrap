@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/classes/login_state.dart';
-import 'package:mobile/pages/authorized/dashboard/accounts_balance.dart';
 import 'package:mobile/pages/authorized/dashboard/dashboard.dart';
 import 'package:mobile/pages/authorized/dashboard/floating_navbar.dart';
-import 'package:mobile/pages/authorized/dashboard/header.dart';
-import 'package:mobile/pages/authorized/dashboard/recent_transactions/recent_transactions.dart';
-import 'package:mobile/pages/authorized/dashboard/send_money/send_money.dart';
 import 'package:mobile/pages/authorized/duitnowqr/duitnow_qr.dart';
+import 'package:mobile/pages/authorized/stats/acc_stats.dart';
 import 'package:mobile/widgets/Background.dart';
 import 'package:provider/provider.dart';
 
@@ -41,7 +38,8 @@ class _LandingPageState extends State<LandingPage> {
         hideNavbar: _hideNavbar,
         loginState: loginState,
       ),
-      DuitNowQR()
+      DuitNowQR(),
+      AccountStatistics()
     ];
 
     return landingPages[currentPage];

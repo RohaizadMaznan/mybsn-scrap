@@ -23,7 +23,7 @@ class _FloatingNavbarState extends State<FloatingNavbar> {
           width: MediaQuery.of(context).size.width - 64,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Color(0xff02c3d6)),
+              color: const Color(0xff02c3d6)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,

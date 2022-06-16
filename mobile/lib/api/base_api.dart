@@ -1,8 +1,5 @@
-import 'dart:convert';
-
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:localstorage/localstorage.dart';
 import 'package:mobile/classes/login_state.dart';
 import 'package:mobile/utils/local_storage.dart';
 

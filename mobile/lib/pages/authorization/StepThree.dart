@@ -29,7 +29,6 @@ class _StepThreeState extends State<StepThree> {
     var width = MediaQuery.of(context).size.width;
 
     var state = Map<String, dynamic>.from(widget.currentLoginState['data']);
-    var imageSrc = 'https://www.mybsn.com.my/${state['imageSrc']}';
     var fp = state['__fp'];
     var sourcePage = state['_sourcePage'];
     var cookie = state['Cookie'];

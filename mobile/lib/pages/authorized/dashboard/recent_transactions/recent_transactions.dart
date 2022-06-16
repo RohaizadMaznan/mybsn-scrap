@@ -82,7 +82,7 @@ class _RecentTransactionsState extends State<RecentTransactions> {
                                 height: 5,
                                 decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(5),
-                                    color: Color(0xffd9d9d9)),
+                                    color: const Color(0xffd9d9d9)),
                               ),
                             );
                           }
@@ -130,7 +130,7 @@ class _RecentTransactionsState extends State<RecentTransactions> {
                           );
                         });
                   }
-                  return Center(
+                  return const Center(
                       child: DottedCircularProgressIndicatorFb(numDots: 10));
                 }),
               ),

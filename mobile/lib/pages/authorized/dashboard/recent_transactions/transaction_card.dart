@@ -21,7 +21,7 @@ class TransactionCard extends StatelessWidget {
         width: 50,
         height: 50,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16), color: Color(0xffd9d9d9)),
+            borderRadius: BorderRadius.circular(16), color: const Color(0xffd9d9d9)),
       ),
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
